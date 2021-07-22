@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirby Inu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/face.scss">
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+</head>
+
+<body class="bg-pink-200">
+    <header class="bg-pink-200">
+        <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
+            <div class="relative h-16 flex justify-between">
+                <div class="relative z-10 px-2 flex lg:px-0">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="block h-12 w-auto" src="./img/logo.png" alt="Kirby Inu Face">
+                    </div>
+                </div>
+                <div class="relative z-0 flex-1 px-2 flex items-center justify-center sm:absolute sm:inset-0">
+                    <div class="w-full sm:max-w-xs">
+                        <div class="relative">
+                            <div class="flex space-x-6 mx-auto mt-8"><a
+                                    href="https://www.dextools.io/app/uniswap/pair-explorer/0x0a15b674f347f4952370f2c5596ba8012bc95f38"
+                                    class="text-white inline-block"><svg version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 50"
+                                        preserveAspectRatio="xMidYMid meet" class="w-10 h-10">
+                                        <g fill="#00b2d1">
+                                            <path
+                                                d="M17.1 47.6 l-4.5 -2.3 2.5 -1.4 c3.5 -1.9 9.9 -2 13.3 -0.2 l3 1.6 -4.5 2.3 c-2.4 1.3 -4.6 2.3 -4.9 2.3 -0.3 0 -2.5 -1 -4.9 -2.3z">
+                                            </path>
+                                            <path
+                                                d="M3.7 41.3 c-3.6 -1.5 -3.8 -1.8 -3.5 -5.4 l0.3 -3.8 18 -9 18 -9 -3.2 -1.2 c-1.8 -0.8 -3.3 -1.6 -3.3 -1.9 0 -0.4 1.5 -1.3 3.3 -2.2 3 -1.5 3.5 -1.4 7 0.3 3.1 1.7 3.7 2.4 3.7 5.3 0 3.3 0 3.3 -18.1 12.2 -18.5 9.1 -18.3 8.9 -13.4 11.9 1.5 0.9 1.3 1.2 -1.7 2.6 -3 1.5 -3.7 1.5 -7.1 0.2z">
+                                            </path>
+                                            <path
+                                                d="M27.6 38.9 l-7.9 -4.1 3.4 -2 3.3 -2 4.3 2.1 c2.4 1.2 4.7 2.1 5.1 2.1 0.4 0 0.6 -1.9 0.4 -4.3 -0.3 -4 -0.2 -4.3 3.3 -6 1.9 -0.9 3.8 -1.7 4 -1.7 0.3 0 0.5 3.6 0.5 8 l0 8 -4 2 c-2.1 1.1 -4.1 2 -4.2 2 -0.2 -0.1 -3.8 -1.9 -8.2 -4.1z">
+                                            </path>
+                                            <path
+                                                d="M0 19 l0 -8 3.8 -1.9 3.7 -1.9 8.3 4.2 8.3 4.2 -3.6 1.7 c-3.1 1.5 -3.9 1.5 -6.3 0.3 -1.5 -0.7 -3.7 -1.7 -4.9 -2 -2.2 -0.7 -2.3 -0.4 -2.3 3.8 0 4 -0.3 4.7 -3 6.1 -1.6 0.8 -3.1 1.5 -3.5 1.5 -0.3 0 -0.5 -3.6 -0.5 -8z">
+                                            </path>
+                                            <path
+                                                d="M15.8 6.8 c-1.6 -0.5 -2.8 -1.3 -2.8 -1.7 0 -0.4 2 -1.7 4.5 -2.9 l4.6 -2.2 4.6 2.4 4.7 2.3 -2.5 1.3 c-3 1.7 -9.5 2.1 -13.1 0.8z">
+                                            </path>
+                                        </g>
+                                    </svg></a> <a href="https://t.me/KirbyInu" class="text-white inline-block"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" class="w-10 h-10">
+                                        <defs>
+                                            <linearGradient id="a" x1=".667" x2=".417" y1=".167" y2=".75">
+                                                <stop offset="0" stop-color="#37aee2"></stop>
+                                                <stop offset="1" stop-color="#1e96c8"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="b" x1=".66" x2=".851" y1=".437" y2=".802">
+                                                <stop offset="0" stop-color="#eff7fc"></stop>
+                                                <stop offset="1" stop-color="#fff"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="120" cy="120" r="120" fill="url(#a)"></circle>
+                                        <path fill="#c8daea"
+                                            d="M98 175c-3.888 0-3.227-1.468-4.568-5.17L82 132.207 170 80"></path>
+                                        <path fill="#a9c9dd" d="M98 175c3 0 4.325-1.372 6-3l16-15.558-19.958-12.035">
+                                        </path>
+                                        <path fill="url(#b)"
+                                            d="M100.04 144.41l48.36 35.729c5.519 3.045 9.501 1.468 10.876-5.123l19.685-92.763c2.015-8.08-3.08-11.746-8.36-9.349l-115.59 44.571c-7.89 3.165-7.843 7.567-1.438 9.528l29.663 9.259 68.673-43.325c3.242-1.966 6.218-.91 3.776 1.258">
+                                        </path>
+                                    </svg></a> <a href="https://twitter.com/KirbyInu"
+                                    class="text-white inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        fill="#1DA1F2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icon-tabler-brand-twitter w-10 h-10">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path
+                                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+                                        </path>
+                                    </svg></a> <a href="https://www.coingecko.com/en/coins/kirby-inu"
+                                    class="text-white inline-block"><img src="./img/coingecko.png"
+                                        class="w-10 h-10"></a> <a
+                                    href="https://etherscan.io/address/0x1fd7e8c718c153fa97a5525c227a098007dcfdda"
+                                    class="text-white inline-block"><img src="./img/etherscan-logo.png"
+                                        class="w-10 h-10 bg-white rounded-3xl"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+
+    </header>
+    <!-- How it works start -->
+    <div>
+
+        <svg class="w-full fill-current relative z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#FC147B" fill-opacity="1"
+                d="M0,224L20,192C40,160,80,96,120,106.7C160,117,200,203,240,245.3C280,288,320,288,360,250.7C400,213,440,139,480,96C520,53,560,43,600,80C640,117,680,203,720,229.3C760,256,800,224,840,213.3C880,203,920,213,960,234.7C1000,256,1040,288,1080,272C1120,256,1160,192,1200,181.3C1240,171,1280,213,1320,229.3C1360,245,1400,235,1420,229.3L1440,224L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+            </path>
+        </svg>
+        <div class="bg-pinky relative overflow-hidden md:pb-64 pb-80">
+            <img class="absolute z-0 inset-0 opacity-10 bg-cover w-full h-full" src="./img/5537004.png" alt="">
+            <div class="relative z-10 lg:max-w-7xl md:max-w-3xl max-w-full md:px-0 px-6 md:mx-auto mx-0">
+                <h1 class="lg:text-7xl text-5xl font-heading font-bold text-white text-center">Kirby Inu</h1>
+                <p
+                    class="font-ptext text-lg text-gray-100 font-light md:w-1/2 w-full md:mx-auto mt-6 leading-relaxed text-center">
+                    The community-oriented MCSE powered by the latest and greatest FTP advances.</p>
+                <div class="flex justify-between my-10 items-center md:flex-row flex-col">
+                    <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+
+                    </div>
+                    <div class="md:w-1/2 w-full">
+                        <div class="rounded-md shadow mb-2"><a target="_blank"
+                                href="https://www.dextools.io/app/uniswap/pair-explorer/0x0a15b674f347f4952370f2c5596ba8012bc95f38"
+                                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                                DEX Charts
+                            </a></div>
+                        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3"><a target="_blank"
+                                href="https://app.uniswap.org/#/swap?exactField=output&exactAmount=500000000000&use=v2&outputCurrency=0x1fd7e8c718c153fa97a5525c227a098007dcfdda&inputCurrency=Eth"
+                                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                Buy on Uniswap
+                            </a></div>
+                        <canvas class="zdog-canvas"></canvas>
+                    </div>
+                    <div class="text-white lg:w-1/3 md:w-1/2 w-full md:text-left text-center">
+                        <h2 class="md:text-6xl text-4xl font-heading font-bold md:pr-10 pr-0">Quit Hodling for nothing
+                        </h2>
+                        <p class="mt-6 text-lg font-ptext font-light leading-relaxed text-gray-100">With Kirby Inu
+                            everyone gets paid a hefty 10% ETH re-distribution to guarantee long term sustainability and
+                            reward those who truly are part of the ecosystem. Other perks include:</p>
+                        <ul class="mt-8 space-y-4 text-xl">
+                            <li>>> NFT meme contest rewards</li>
+                            <li>>> Rare NFT Airdrops for top holders</li>
+                            <li>>> 0% royalty fees on collectible cards & action figure sales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How it works end -->
+    <!-- Kirbyinu starts -->
+    <div class="-mt-80 relative z-20">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#207BE7" fill-opacity="1"
+                d="M0,32L20,32C40,32,80,32,120,53.3C160,75,200,117,240,128C280,139,320,117,360,106.7C400,96,440,96,480,85.3C520,75,560,53,600,80C640,107,680,181,720,224C760,267,800,277,840,256C880,235,920,181,960,149.3C1000,117,1040,107,1080,117.3C1120,128,1160,160,1200,170.7C1240,181,1280,171,1320,154.7C1360,139,1400,117,1420,106.7L1440,96L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+            </path>
+        </svg>
+        <div class="relative overflow-hidden py-42 bg-blues">
+            <img class="absolute z-0 inset-0 opacity-10 bg-cover w-full h-full" src="./img/v63.png" alt="">
+            <div class="relative z-10 lg:max-w-7xl md:max-w-3xl max-w-full md:mx-auto mx-0 px-6 lg:px-0">
+                <div
+                    class="lg:max-w-5xl md:max-w-2xl max-w-full flex justify-between md:mx-auto mx-0 md:items-end items-center md:flex-row flex-col text-center md:text-left">
+                    <div class="md:w-1/2 w-full md:mt-0 mt-8">
+                        <h1 class="lg:text-7xl text-5xl font-heading font-bold md:pr-10 pr-0 text-white">Kirby Inu
+                            Tokenomics</h1>
+                    </div>
+                    <!-- <div class="md:w-1/2 w-full md:mt-0 mt-6">
+                        <p class="text-lg font-ptext font-light leading-relaxed text-gray-100">This project is purely a
+                            meme, so don't take it too seriously. No i'm not stealing any of the code from Star Foxx or
+                            any dapps.</p>
+                    </div> -->
+                </div>
+                <div class="flex justify-between mt-28 items-center md:flex-row flex-col-reverse">
+                    <div class="lg:w-1/3 md:w-1/2 w-full text-center md:text-left mt-10 md:mt-0 pb-12 md:pb-0">
+                        <div>
+                            <h2 class="text-4xl font-heading font-bold text-white">>> 10% ETH Redistribution</h2>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">Claim your
+                                rewards for holding from <a class="text-yellow-400 font-bold"
+                                    href="https://app.fairtokenproject.com"
+                                    target="_blank">https://app.fairtokenproject.com</a></p>
+                        </div>
+                        <div class="md:mt-6 mt-12">
+                            <h2 class="text-4xl font-heading font-bold text-white">>> 3% Dev Fee</h2>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">Dev fee to
+                                create more NFTs and Asia marketing outreach.</p>
+                        </div>
+                        <div class="md:mt-6 mt-12">
+                            <h2 class="text-4xl font-heading font-bold text-white">>> 100 Trillion Supply</h2>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">.5% of supply
+                                max tx limit at the first 30 minutes. No limit on sells. </p>
+                        </div>
+                    </div>
+                    <img class="w-auto" src="./img/reflection-warrior.png" />
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#207BE7" fill-opacity="1"
+                d="M0,256L16,234.7C32,213,64,171,96,138.7C128,107,160,85,192,85.3C224,85,256,107,288,112C320,117,352,107,384,112C416,117,448,139,480,176C512,213,544,267,576,250.7C608,235,640,149,672,112C704,75,736,85,768,90.7C800,96,832,96,864,117.3C896,139,928,181,960,181.3C992,181,1024,139,1056,144C1088,149,1120,203,1152,197.3C1184,192,1216,128,1248,128C1280,128,1312,192,1344,186.7C1376,181,1408,107,1424,69.3L1440,32L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+    <!-- Kirbyinu end -->
+    <!-- Face start -->
+    <div id='content'>
+        <a id='kirby'>
+            <div class='eyes left'></div>
+            <div class='eyes right'></div>
+            <div class='mouth'></div>
+            <div class='cheeks'></div>
+        </a>
+    </div>
+    <!-- Face end -->
+    <div class="mt-6 relative">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#FA6030" fill-opacity="1"
+                d="M0,0L18.5,32C36.9,64,74,128,111,170.7C147.7,213,185,235,222,213.3C258.5,192,295,128,332,96C369.2,64,406,64,443,85.3C480,107,517,149,554,144C590.8,139,628,85,665,80C701.5,75,738,117,775,112C812.3,107,849,53,886,69.3C923.1,85,960,171,997,224C1033.8,277,1071,299,1108,277.3C1144.6,256,1182,192,1218,176C1255.4,160,1292,192,1329,197.3C1366.2,203,1403,181,1422,170.7L1440,160L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
+            </path>
+        </svg>
+        <div class="relative pt-16 bg-orange">
+            <img class="absolute left-0 md:-top-24 top-0 lg:w-auto md:w-1/5 w-1/3" src="./img/coin.png" alt="">
+        </div>
+        <div class="bg-orange">
+            <div class="relative z-10 md:max-w-7xl max-w-full md:mx-auto mx-0 px-6 md:px-0">
+                <h1 class="md:text-7xl text-5xl font-heading font-bold text-white text-center">Roadmap</h1>
+                <div class="mt-24">
+                    <img class="md:w-full w-0" src="./img/line.png" alt="">
+                    <div
+                        class="md:max-w-6xl max-w-full md:mx-auto mx-0 flex justify-between md:-mt-6 mt-0 md:flex-row flex-col space-y-6 md:space-y-0">
+                        <div class="text-center md:w-1/5 w-full">
+                            <svg class="mx-auto" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                    <circle cx="28" cy="24" r="12" fill="white" />
+                                    <circle cx="28" cy="24" r="13" stroke="#FA6030" stroke-width="2" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d" x="0" y="0" width="56" height="56"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                        <feOffset dy="4" />
+                                        <feGaussianBlur stdDeviation="7" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <h2 class="text-4xl font-heading font-bold text-white">Phase 1</h2>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">- Smart contract
+                                development</p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">- Contract
+                                bug/security checks</p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">- Mainnet
+                                contract deployment</p>
+
+                        </div>
+                        <div class="text-center md:w-1/5 w-full">
+                            <svg class="mx-auto" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                    <circle cx="28" cy="24" r="12" fill="white" />
+                                    <circle cx="28" cy="24" r="13" stroke="#FA6030" stroke-width="2" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d" x="0" y="0" width="56" height="56"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                        <feOffset dy="4" />
+                                        <feGaussianBlur stdDeviation="7" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <h2 class="text-4xl font-heading font-bold text-white">Phase 2</h2>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">- Initial
+                                marketing campaign
+                            </p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-
+                            </p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-
+                            </p>
+                        </div>
+                        <div class="text-center md:w-1/5 w-full">
+                            <svg class="mx-auto" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                    <circle cx="28" cy="24" r="12" fill="white" />
+                                    <circle cx="28" cy="24" r="13" stroke="#FA6030" stroke-width="2" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d" x="0" y="0" width="56" height="56"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                        <feOffset dy="4" />
+                                        <feGaussianBlur stdDeviation="7" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <h2 class="text-4xl font-heading font-bold text-white">Phase 3</h2>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-
+                            </p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-
+                            </p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-
+                            </p>
+                        </div>
+                        <div class="text-center md:w-1/5 w-full">
+                            <svg class="mx-auto" width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                    <circle cx="28" cy="24" r="12" fill="white" />
+                                    <circle cx="28" cy="24" r="13" stroke="#FA6030" stroke-width="2" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d" x="0" y="0" width="56" height="56"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                        <feOffset dy="4" />
+                                        <feGaussianBlur stdDeviation="7" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <h2 class="text-4xl font-heading font-bold text-white">Phase 4</h2>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-
+                            </p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-
+                            </p>
+                            <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 mt-6">-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 w-full md:mx-auto mx-0 text-center md:mt-28 mt-20 md:pb-0 pb-20">
+                    <p class="text-lg font-ptext font-light leading-relaxed text-gray-100 my-6 px-12 ">Meme Coin
+                        tokenomics to make it last forever.</p>
+                    <button type="button"
+                        class="inline-flex items-center border border-orange shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ">
+                        <a href="#" class="px-8 py-4 text-orange hover:text-white text-lg">White Paper (Coming Soon)</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="realtive">
+            <img class="absolute lg:bottom-48 md:bottom-20 bottom-12 right-0 lg:w-auto md:w-1/5 w-1/3"
+                src="./img/coin2.png" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#FA6030" fill-opacity="1"
+                    d="M0,160L34.3,154.7C68.6,149,137,139,206,112C274.3,85,343,43,411,37.3C480,32,549,64,617,85.3C685.7,107,754,117,823,149.3C891.4,181,960,235,1029,229.3C1097.1,224,1166,160,1234,160C1302.9,160,1371,224,1406,256L1440,288L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <footer>
+        <div class="lg:max-w-7xl md:max-w-3xl max-w-full md:mx-auto mx-0 text-center md:text-left px-4 lg:px-0">
+            <div class="flex justify-between md:flex-row flex-col">
+                <div class="md:w-1/5 w-1/2 md:mx-0 mx-auto">
+                    <h1 class="text-gray-900 text-5xl font-heading">kirbyinu<span class="text-pink-600">.</span></h1>
+                    <p class="text-gray-800 text-xl font-ptext mt-16 font-bold">Follow us</p>
+                    <div class="flex space-x-5 mt-6">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://twitter.com/KirbyInu">
+                                <circle opacity="0.1" cx="21.9998" cy="22" r="22" fill="#111827" />
+                                <path
+                                    d="M29.945 17.9349C29.9582 18.108 29.9582 18.2801 29.9582 18.4522C29.9582 23.7197 25.8335 29.7894 18.2953 29.7894C15.9729 29.7894 13.8153 29.1355 11.9998 27.9999C12.3295 28.0365 12.647 28.0494 12.99 28.0494C14.9063 28.0494 16.67 27.4202 18.0795 26.347C16.2772 26.3104 14.7669 25.1629 14.2458 23.5842C14.4992 23.6208 14.7537 23.6455 15.0203 23.6455C15.3877 23.6455 15.7571 23.596 16.1001 23.51C14.2204 23.14 12.8129 21.5365 12.8129 19.5997V19.5502C13.3594 19.846 13.9934 20.031 14.6651 20.0557C13.5609 19.3415 12.8373 18.1199 12.8373 16.738C12.8373 15.998 13.0399 15.3195 13.395 14.7279C15.4131 17.1445 18.4469 18.7243 21.8481 18.8974C21.785 18.6006 21.7463 18.293 21.7463 17.9843C21.7463 15.7883 23.5741 13.9999 25.8457 13.9999C27.0262 13.9999 28.0918 14.4806 28.8408 15.2581C29.7669 15.085 30.6543 14.7517 31.4421 14.2956C31.1378 15.2205 30.4895 15.998 29.6397 16.4917C30.4651 16.4046 31.265 16.183 31.9998 15.8744C31.4421 16.6638 30.7449 17.3671 29.945 17.9349Z"
+                                    fill="#111827" />
+                            </a>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="md:w-3/5 w-full order-1 md:order-none">
+                    <img class="w-1/2 mx-auto" src="./img/hand.png" alt="">
+                </div>
+                <div class="md:w-1/5 w-1/2 md:mx-0 mx-auto my-10 md:my-0">
+                    <p class="text-gray-800 text-xl font-ptext mb-6 font-bold">Quick links</p>
+                    <ul class="space-y-6">
+                        <li class="text-gray-600 hover:text-gray-900 text-lg font-ptext"><a
+                                href="https://www.dextools.io/app/uniswap/pair-explorer/0x0a15b674f347f4952370f2c5596ba8012bc95f38">Dext
+                                Charts</a></li>
+                        <li class="text-gray-600 hover:text-gray-900 text-lg font-ptext"><a
+                                href="https://etherscan.io/address/0x1fd7e8c718c153fa97a5525c227a098007dcfdda">Etherscan</a>
+                        </li>
+                        <li class="text-gray-600 hover:text-gray-900 text-lg font-ptext"><a
+                                href="https://rarible.com/kirbyinu">Rarible</a></li>
+                        <li class="text-gray-600 hover:text-gray-900 text-lg font-ptext"><a
+                                href="https://t.me/KirbyInu">@KirbyInu</a></li>
+                        <li class="text-gray-600 hover:text-gray-900 text-lg font-ptext"><a
+                                href="https://t.me/KirbyInu_ETH_CN">@KirbyInu_ETH_CN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        margin: 0;
+        background: #425;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: move;
+    }
+</style>
+
+<script>
+    // Made with Zdog
+
+    // ----- setup ----- //
+
+    var sceneSize = 80;
+    var isSpinning = true;
+    var TAU = Zdog.TAU;
+    // colors
+    var pink = '#F8B';
+    var blush = '#F5A';
+    var black = '#333';
+    var shoe = '#D03';
+    var red = '#E10';
+    var yellow = '#FD0';
+
+    var illo = new Zdog.Illustration({
+        element: '.zdog-canvas',
+        dragRotate: true,
+        resize: 'fullscreen',
+        onDragStart: function () {
+            isSpinning = false;
+        },
+        onResize: function (width, height) {
+            this.zoom = Math.floor(Math.min(width, height) / sceneSize);
+        },
+    });
+
+    // ----- model ----- //
+
+    var body = new Zdog.Shape({
+        stroke: 22,
+        translate: { y: 11 },
+        rotate: { x: 0.3, z: 0.1 },
+        addTo: illo,
+        color: pink,
+    });
+
+    var face = new Zdog.Anchor({
+        translate: { z: 10.5 },
+        addTo: body,
+    });
+
+    [-1, 1].forEach(function (xSide) {
+        var eyeGroup = new Zdog.Group({
+            addTo: face,
+            translate: { x: 2.4 * xSide, y: -2 },
+            rotate: { x: -0.1 },
+        });
+        // eye
+        new Zdog.Ellipse({
+            width: 1.4,
+            height: 5.5,
+            addTo: eyeGroup,
+            stroke: 1,
+            color: black,
+            fill: true,
+        });
+        // eye highlight
+        new Zdog.Ellipse({
+            width: 1,
+            height: 2,
+            addTo: eyeGroup,
+            translate: { y: -1.5, z: 0.5 },
+            stroke: 0.5,
+            color: '#FFF',
+            fill: true,
+        });
+
+        // cheek holder
+        var cheekHolder = new Zdog.Anchor({
+            addTo: body,
+            rotate: { y: 0.6 * xSide },
+        });
+
+        new Zdog.Ellipse({
+            width: 2.5,
+            height: 1,
+            translate: { y: 1, z: 10.5 },
+            addTo: cheekHolder,
+            color: blush,
+            stroke: 1,
+        });
+
+    });
+
+    // mouth
+    new Zdog.Shape({
+        path: [
+            { x: 0, y: 0 },
+            {
+                bezier: [
+                    { x: 1.1, y: 0 },
+                    { x: 1.1, y: 0.2 },
+                    { x: 1.1, y: 0.5 },
+                ]
+            },
+            {
+                bezier: [
+                    { x: 1.1, y: 1.1 },
+                    { x: 0.2, y: 1.8 },
+                    { x: 0, y: 1.8 },
+                ]
+            },
+            {
+                bezier: [
+                    { x: -0.2, y: 1.8 },
+                    { x: -1.1, y: 1.1 },
+                    { x: -1.1, y: 0.5 },
+                ]
+            },
+            {
+                bezier: [
+                    { x: -1.1, y: 0.2 },
+                    { x: -1.1, y: 0 },
+                    { x: 0, y: 0 },
+                ]
+            },
+        ],
+        addTo: face,
+        translate: { y: 2, z: -0.5 },
+        stroke: 1,
+        color: shoe,
+        fill: true,
+    });
+
+    var rightArm = new Zdog.Shape({
+        path: [
+            { y: 0 },
+            { y: -7 },
+        ],
+        addTo: body,
+        translate: { x: -6, y: -4, z: 0 },
+        color: pink,
+        stroke: 7,
+    });
+
+    // left arm
+    rightArm.copy({
+        path: [
+            { x: 0 },
+            { x: 6 },
+        ],
+        translate: { x: 6, y: -2, z: 0 },
+    });
+
+    // right foot
+    var rightFoot = new Zdog.Shape({
+        path: [
+            { x: 0, y: -2 },
+            {
+                arc: [
+                    { x: 2, y: -2 },
+                    { x: 2, y: 0 },
+                ]
+            },
+            {
+                arc: [
+                    { x: 2, y: 5 },
+                    { x: 0, y: 5 },
+                ]
+            },
+            {
+                arc: [
+                    { x: -2, y: 5 },
+                    { x: -2, y: 0 },
+                ]
+            },
+            {
+                arc: [
+                    { x: -2, y: -2 },
+                    { x: 0, y: -2 },
+                ]
+            },
+        ],
+        addTo: body,
+        translate: { x: -1, y: 9, z: -9 },
+        rotate: { z: 0.2 },
+        stroke: 6,
+        color: shoe,
+        fill: true,
+        closed: false,
+    });
+
+    rightFoot.copy({
+        translate: { x: 9.5, y: 6, z: -6 },
+        rotate: { z: -1.1, y: 0.8 },
+    });
+
+    // ----- umbrella ----- //
+
+    // umbrella rod
+    var umbrella = new Zdog.Shape({
+        path: [
+            { y: 0 },
+            { y: 22 },
+        ],
+        addTo: rightArm,
+        translate: { y: -33, z: 2 },
+        rotate: { y: 0.5 },
+        color: yellow,
+        stroke: 1,
+    });
+
+    // star
+    var starPath = (function () {
+        var path = [];
+        var starRadiusA = 3;
+        var starRadiusB = 1.7;
+        for (var i = 0; i < 10; i++) {
+            var radius = i % 2 ? starRadiusA : starRadiusB;
+            var angle = TAU * i / 10 + TAU / 4;
+            var point = {
+                x: Math.cos(angle) * radius,
+                y: Math.sin(angle) * radius,
+            };
+            path.push(point);
+        }
+        return path;
+    })();
+    // star shape
+    var star = new Zdog.Shape({
+        path: starPath,
+        addTo: umbrella,
+        translate: { y: -4.5 },
+        stroke: 2,
+        color: yellow,
+        fill: true,
+    });
+
+    // umbrella handle
+    new Zdog.Shape({
+        path: [
+            { z: 0, y: 0 },
+            { z: 0, y: 1 },
+            {
+                arc: [
+                    { z: 0, y: 4 },
+                    { z: 3, y: 4 },
+                ]
+            },
+            {
+                arc: [
+                    { z: 6, y: 4 },
+                    { z: 6, y: 1 },
+                ]
+            },
+        ],
+        addTo: umbrella,
+        translate: { y: 23 },
+        stroke: 2,
+        color: '#37F',
+        closed: false,
+    });
+
+    // umbrella shield panels
+    (function () {
+        var umbPanelX = 14 * Math.sin(TAU / 24);
+        var umbPanelZ = 14 * Math.cos(TAU / 24);
+        for (var i = 0; i < 12; i++) {
+            var colorSide = Math.floor(i / 2) % 2;
+            new Zdog.Shape({
+                path: [
+                    { x: 0, y: 0, z: 0 },
+                    {
+                        arc: [
+                            { x: -umbPanelX, y: 0, z: umbPanelZ },
+                            { x: -umbPanelX, y: 14, z: umbPanelZ },
+                        ]
+                    },
+                    { x: umbPanelX, y: 14, z: umbPanelZ },
+                    {
+                        arc: [
+                            { x: umbPanelX, y: 0, z: umbPanelZ },
+                            { x: 0, y: 0, z: 0 },
+                        ]
+                    },
+                ],
+                addTo: umbrella,
+                rotate: { y: TAU / 12 * i },
+                stroke: 1,
+                color: colorSide ? red : 'white',
+                fill: true,
+            });
+        }
+    })();
+
+    // floater stars
+    (function () {
+        for (var i = 0; i < 6; i++) {
+            var starHolder = new Zdog.Anchor({
+                addTo: umbrella,
+                translate: { y: 10 },
+                rotate: { y: TAU / 6 * i + TAU / 24 },
+            });
+            star.copy({
+                addTo: starHolder,
+                translate: { z: 28 },
+            });
+        }
+    })();
+
+    // ----- animate ----- //
+
+    function animate() {
+        illo.rotate.y += isSpinning ? -0.03 : 0;
+        illo.updateRenderGraph();
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+
+
+</script>
