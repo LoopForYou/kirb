@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugly Baby</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hero .headline h1::before {
+            content: attr(title);
+            position: absolute;
+            -webkit-text-stroke: 0.16em rgb(255, 255, 255);
+            left: 0;
+            z-index: -1;
+        }
+
+        .hero .headline h1::after {
+            content: attr(title);
+            position: absolute;
+            -webkit-text-stroke: 0.23em black;
+            left: 0;
+            z-index: -2;
+            top: 0;
+        }
+
+        .hero .second-headline h2 {
+            -webkit-text-stroke: 2px rgba(250, 0, 255);
+        }
+
+        .hero .second-headline h2::before {
+            content: attr(title);
+            position: absolute;
+            -webkit-text-stroke: 0.16em rgb(255, 255, 255);
+            left: 0;
+            z-index: -1;
+        }
+
+        .hero .second-headline h2::after {
+            content: attr(title);
+            position: absolute;
+            -webkit-text-stroke: 0.23em black;
+            left: 0;
+            z-index: -2;
+            top: 0;
+        }
+
+        .hero .last-one h3, .hero .last-one p{
+            -webkit-text-stroke: 1px rgb(0, 0, 0);
+        }
+
+        .hero .last-one {
+            box-shadow: 10px 10px 5px 0px rgba(250,0,255,0.75);
+        }
+
+        #rarity ul li {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            padding: 20px 15px;
+        }
+
+        #rarity ul li:nth-child(odd) {
+            background-color: #CAE9FA;
+        }
+
+        #rarity ul li:nth-child(even) {
+            padding: 10px 0;
+        }
+        
+        footer .ff1, footer .ff2 {
+            animation: bounce 2s infinite;
+            -webkit-animation: bounce 2s infinite;
+            -moz-animation: bounce 2s infinite;
+            -o-animation: bounce 2s infinite;
+        }
+
+        @-webkit-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+            40% {-webkit-transform: translateY(-30px);}
+            60% {-webkit-transform: translateY(-15px);}
+        }
+ 
+@-moz-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+            40% {-moz-transform: translateY(-30px);}
+            60% {-moz-transform: translateY(-15px);}
+        }
+ 
+@-o-keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+            40% {-o-transform: translateY(-30px);}
+            60% {-o-transform: translateY(-15px);}
+        }
+@keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-30px);}
+            60% {transform: translateY(-15px);}
+        }
+
+    </style>
+</head>
+<body>
+    <header class="hero pt-10 pb-40 bg-header bg-cover bg-right xl:bg-center px-2 xl:px-0">
+        <div class="container mx-auto">
+            <div class="flex justify-between xl:flex-row flex-col-reverse">
+                <div class="headline w-auto border-8 border-yellow-200 rounded-xl relative py-10 xl:px-20 mt-20 xl:mt-0 mx-auto xl:mx-0 px-8">
+                    <div class="bg-gray-500 opacity-20 w-full h-full absolute inset-0 z-10"></div>
+                    <h1 class="font-fred text-uglypink xl:text-9xl text-5xl relative z-20 leading-normal" title="Ugly Baby">Ugly Baby</h1>
+                    <h1 class="font-fred text-uglypink xl:text-9xl text-5xl relative z-20 leading-normal xl:mt-10" title="Kirby NFTs">Kirby NFTs</h1>
+                </div>
+                <div class="xl:mr-20 xl:justify-self-end justify-self-center mx-auto">
+                    <a class="px-8 pt-2 pb-3 bg-uglypink text-white text-xl rounded-xl transform transition-all duration-300 hover:bg-uglysky hover:text-uglypink" href="#">Buy</a>
+                </div>
+            </div>
+            <div class="second-headline inline-block border-8 border-blue-200 mt-10 rounded-xl relative py-10 px-6 xl:w-1/3 w-full">
+                <div class="bg-gray-500 opacity-20 w-full h-full absolute inset-0 z-10"></div>
+                <h2 class="font-baloo text-uglysky text-6xl relative z-20 leading-snug text-center font-bold" title="Holding 100 Billion KirbyInu = 1 Free NFT">Holding 100 Billion KirbyInu = 1 Free NFT</h2>
+            </div>
+            <div class="second-headline xl:inline-block md:block inline-block border-8 border-green-200 rounded-xl relative py-10 xl:px-32 px-6 xl:w-1/3 md:w-1/2 md:mx-auto w-full mt-10 xl:mt-0">
+                <div class="bg-gray-500 opacity-20 w-full h-full absolute inset-0 z-10"></div>
+                <h2 class="font-baloo text-uglysky text-6xl relative z-20 leading-snug text-center font-bold" title="One NFT Mint per wallet">One NFT Mint per wallet</h2>
+            </div>
+            <div class="bg-white relative last-one py-10 rounded-xl mt-14 xl:mx-8 mx-3">
+                <img class="absolute w-28 xl:w-auto xl:-left-16 xl:-top-16 -right-4 -top-16" src="./img/ninja.png" alt="">
+                <div class="xl:max-w-7xl mx-auto">
+                    <div class="flex justify-between xl:flex-row flex-col items-center px-5 xl:px-0">
+                        <div class="xl:w-1/2 w-full xl:ml-16">
+                            <h3 class="text-uglygreen text-4xl font-bold font-fred xl:mr-60">Quit Hodling for nothing.</h3>
+                            <p class="text-uglygreen text-xl font-fred mt-4">Get paid a hefty 10% ETH re-distribution to guarantee long term sustainability and reward those who truly are part of the ecosystem.</p>
+                        </div>
+                        <div class="xl:w-1/3 w-full xl:px-32 px-10 mt-10 xl:mt-0">
+                            <h3 class="text-4xl text-uglygreen font-bold font-baloo text-center">Buy on Uniswap</h3>
+                        </div>
+                        <div class="xl:w-1/3 w-full xl:px-16 px-10 mt-10 xl:mt-0">
+                            <h3 class="text-4xl text-uglygreen font-bold font-baloo text-center">Mint Ugly Kirby Babies</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-uglysky pt-40 bg-faces bg-cover xl:bg-center bg-left xl:h-screen px-5 pb-28 xl:pb-0">
+        <div class="bg-white xl:w-2/3 w-full mx-auto py-20 rounded-xl relative text-center overflow-hidden">
+            <img class="absolute z-0 inset-0 w-auto" src="./img/b1.png" alt="">
+            <div class="relative z-10">
+                <h2 class="font-right uppercase xl:text-7xl text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-uglysky via-uglypink to-yellow-300">Get your ugly baby</h2>
+                <p class="font-space xl:mx-28 mx-5 mt-6">Robotos is a collection of droid characters designed by Pablo Stanley and minted as NFTs. They are constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Get your own!</p>
+                <a class="bg-gradient-to-r from-uglysky via-uglypink to-yellow-300 px-16 py-6 text-black font-black font-right text-2xl mt-16 inline-block" href="#">View on opensea</a>
+                <div class="bg-gray-300 w-64 mx-auto px-10 py-2 mt-12">
+                    <p class="font-space">0 of 9,999 available OMG. Sold out!</p>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section id="rarity" class="bg-rarity bg-cover h-full pt-60 pb-40 px-5">
+        <div class="bg-white xl:w-2/3 w-full mx-auto py-20 rounded-xl relative overflow-hidden">
+            <img class="absolute bottom-0 left-0 z-0" src="./img/rar.png" alt="">
+            <div class="text-center">
+                <h2 class="font-right uppercase text-7xl font-black text-transparent bg-contain bg-clip-text bg-gradient-to-r from-uglysky to-uglypink">Rarity</h2>
+                <p class="font-space xl:mx-28 mx-4 mt-6">Each NFT is algorithmically generated by combining 170+ unique traits with varying rarity across categories.</p>
+            </div>
+            <div class="mt-10 relative z-10">
+                <div class="flex justify-between xl:flex-row flex-col max-w-5xl mx-auto">
+                    <div class="xl:w-1/3 w-full px-6 xl:px-0">
+                        <h3 class="text-4xl font-right font-black">Types</h3>
+                        <div class="flex justify-between mt-6">
+                            <ul class="space-y-5 w-full">
+                                <li> <span> 9,999 </span> <span>Total Robotos</span></li>
+                                <li> <span> Common </span> <span>Robotos</span></li>
+                                <li> <span> Less Common </span> <span>Helmetos</span></li>
+                                <li> <span> Rare </span> <span>Cyborgos</span></li>
+                                <li> <span> Super Rare </span> <span>Computos</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/3 w-full px-6 xl:px-0 mt-16 xl:mt-0">
+                        <h3 class="text-4xl font-right font-black">Variations</h3>
+                        <div class="flex justify-between mt-6">
+                            <ul class="space-y-5 w-full">
+                                <li> <span> 38 </span> <span>Head Tops</span></li>
+                                <li> <span> 32 </span> <span>Eyes</span></li>
+                                <li> <span> 18 </span> <span>Helmetos</span></li>
+                                <li> <span> 16 </span> <span>Mouth</span></li>
+                                <li> <span> 18 </span> <span>Ears</span></li>
+                                <li> <span> 12 </span> <span>Arms</span></li>
+                                <li> <span> 10 </span> <span>Chassis Colors</span></li>
+                                <li> <span> 09 </span> <span>Backpacks</span></li>
+                                <li> <span> 06 </span> <span>Computo Heades</span></li>
+                                <li> <span> 05 </span> <span>Chest Screens</span></li>
+                                <li> <span> 04 </span> <span>Bodies</span></li>
+                                <li> <span> 04 </span> <span>Head Type</span></li>
+                                <li> <span> 04 </span> <span>Human Faces</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tyson" class="bg-dot bg-cover bg-pink-100 px-5">
+        <div class="container mx-auto py-20">
+            <div class="flex justify-between xl:flex-row flex-col align-middle">
+                <div class="xl:w-1/2 w-full">
+                <div class="flex items-start align-middle">
+                    <h2 class="font-right uppercase xl:text-7xl text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-uglypink via-uglysky to-purple-500">NFT Gifting</h2>
+                    <img src="./img/tysonface.png" alt="">
+                </div>
+                <p class="font-space mt-6">Each NFT is algorithmically generated by combining 170+ unique traits with varying rarity across categories. Each NFT is algorithmically generated by combining 170+ unique traits with varying rarity across categories. Each NFT is algorithmically generated by combining 170+ unique traits with varying rarity across categories.</p>
+                </div>
+                <!-- <div class="aspect-w-1 aspect-h-1">
+                    <iframe src="mike.mov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> -->
+                <div class="xl:w-1/2 w-full mt-12 xl:mt-0">
+                    <iframe class="ml-auto w-full h-96" src="https://www.youtube.com/watch?v=Oz9zw7-_vhM"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timer" class="bg-gradient-to-tr from-uglysky via-uglypink to-yellow-400 py-40 px-8 xl:px-0">
+            <ul class="container mx-auto flex justify-between xl:flex-row flex-col bg-gray-900 py-20 xl:px-44 px-20 text-gray-50">
+              <li class="text-center"><span id="days" class="block text-center font-space text-7xl"></span>days</li>
+              <span class="inline-block my-auto text-6xl text-gray-500 text-center xl:text-left">:</span>
+              <li class="text-center"><span id="hours" class="block text-center font-space text-7xl"></span>Hours</li>
+              <span class="inline-block my-auto text-6xl text-gray-500 text-center xl:text-left">:</span>
+              <li class="text-center"><span id="minutes" class="block text-center font-space text-7xl"></span>Minutes</li>
+              <span class="inline-block my-auto text-6xl text-gray-500 text-center xl:text-left">:</span>
+              <li class="text-center"><span id="seconds" class="block text-center font-space text-7xl"></span>Seconds</li>
+            </ul>
+    </section>
+
+    <section id="faq" class="bg-uglysky py-40">
+        <div class="container mx-auto">
+            <h2 class="font-right uppercase xl:text-9xl text-7xl font-black text-transparent bg-clip-text bg-gradient-to-tr from-uglysky via-uglypink to-yellow-300 inline-block">FAQ</h2>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-20">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">What are Ugly Baby kirby NFTs?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-12">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">Who is behind Ugly Baby kirby NFTs?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-12">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">What do I get?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-12">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">How do I get my stuff?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-12">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">Why Ugly Baby kirby NFTs?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-12">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">What's on the roadmap?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-12">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">What’s an NFT?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+            <div class="bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300 max-w-4xl py-10 px-10 mt-12">
+                <div class="flex justify-between items-center border-b-2 border-gray-400 pb-5">
+                    <h3 class="font-right text-4xl font-black">How do I NFT?</h3>
+                    <i class="fas fa-chevron-up text-2xl font-black"></i>
+                </div>
+                <p class="font-space mt-8">Robotos is a collection of algorithmically generated droid characters designed by Pablo Stanley and minted as NFTs on the Ethereum blockchain. The 1st generation of 10,000 droids will be constructed from various metal outfits, tin faces, digital accessories, top pieces, faces, backpacks, arms, and colors. Robotos have different body types, some rarer than others, and... there are rumors that you could find humans pretending to be robots too. Is it true? 🤔</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-footer bg-cover py-36 bg-center">
+        <div class="text-center relative max-w-xl mx-auto">
+            <img class="w-20 xl:w-auto absolute left-0 xl:top-6 top-0 ff1" src="./img/ff1.png" alt="">
+            <img class="w-20 xl:w-auto absolute xl:-right-10 right-0 top-0 ff2" src="./img/ff2.png" alt="">
+            <h1 class="xl:text-9xl text-7xl font-right font-black text-transparent inline-block uppercase bg-clip-text bg-gradient-to-tr from-uglysky via-pink-300 to-yellow-300">Domo <br> Arigato</h1>
+            <div class="block">
+                <a class="bg-gradient-to-r bg-yellow-50 px-16 py-6 text-black font-black font-right text-2xl mt-16 inline-block" href="#">View on opensea</a>
+                <p class="text-white font-space mt-12 text-xl">Follow Robotos on Twitter or Discord Verified Smart Contract</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let launch = "Sep 24, 2021 00:00:00",
+      countDown = new Date(launch).getTime(),
+      x = setInterval(function() {    
+
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+      
+        //seconds
+      }, 0)
+  }());
+</script>
+</body>
+</html>
